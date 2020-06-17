@@ -1,0 +1,549 @@
+/* 全局布局 */
+
+* {
+    margin: 0;
+}
+
+.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 页眉区的CSS */
+
+#header {
+    height: 650px;
+    background-image: url(../img/04.png);
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: hidden;
+    min-width: 980px;
+}
+
+#header .inner{
+    position: relative;
+    height: 130px;
+    width: 980px;
+    margin: auto;
+}
+
+/* 页眉区结束 */
+
+
+/*导航区的CSS*/
+
+#nav {
+    background-color: rgb(241, 145, 113);
+    width: 100%;
+    height: 40px;
+    
+}
+
+#nav .inner {
+    background-color: rgb(241, 145, 113);
+    width: 1000px;
+    height: 41px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    vertical-align: bottom;
+}
+
+.nav-item a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-item a span.item-name {
+    padding: 0 25px;
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    height: 41px;
+    line-height: 41px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*导航区结束*/
+
+
+/* 首页——内容区（自我介绍）的CSS */
+
+#index_con1 {
+    height: 700px;
+    background-color: #000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#index_con1 .inner {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.left {/*左边箭头*/
+    margin-top: 60px; 
+    margin-left: 300px;
+}
+
+.myimg{/*我的头像*/
+    width: 120px; 
+    height: 120px; 
+    border-radius: 120px; 
+}
+
+.right {/*右边箭头*/
+    margin-left: 660px;
+}
+
+.introduction {/*自我介绍文字部分*/
+    width: 1000px;
+    height: 200px;
+}
+
+.introduction h2 {/*自我介绍文字部分*/
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.introduction p {/*自我介绍文字部分*/
+    width: 600px;
+    font-size: 14px;
+    line-height: 180%;
+    text-indent: 2em;
+    margin: auto;
+}
+/* 首页——内容区（自我介绍）结束 */
+
+
+/*个人简历——内容区的CSS*/
+
+#resume_con1 {
+    height: 2400px;
+    background-color: #000000;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+#resume_con1 .inner {
+    height: 2400px;
+    position: relative;
+    background-image: url(../img/bar.png);
+}
+
+.img {/*我的头像*/
+    width: 746px;
+    height: 120px;
+}
+
+.img .resume_myimg {/*我的头像*/
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 150px; 
+    left: 0;
+    right: 0;
+    top: -60px;
+    margin: auto;
+}
+
+.img2 {/*后面条目对应的图片样式*/
+    width: 746px;
+    height: 180px;
+}
+
+.img2 .myinfo_img {/*后面条目对应的图片样式*/
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 150px; 
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.myinfo {/*后面条目对应的文字样式*/
+    width: 746px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.leftbox {
+    float: left;
+    width: 320px;
+    padding-right: 50px;
+}
+
+.leftbox h2 {/*左边为每一个条目对应的标题*/
+    font-size: 20px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.rightbox {
+    float: right;
+    width: 320px;
+    padding-left: 50px;
+}
+
+.rightbox p {/*右边为每一个条目对应的段落*/
+    font-size: 14px;
+    line-height: 2em;
+    /*text-indent: 2em;*/
+}
+
+/*个人简历——内容区结束*/
+
+/*我的项目内容区（表格）*/
+#myproject {
+    height: 1200px;
+    background-color: #f1efe3;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+#mp_head {
+    width: 1000px;
+    height: 40px;
+    float: right;
+    border-bottom: 1px solid #ccc;
+}
+
+.mp_title{
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+}
+
+.mp_title h2{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #106f66;
+}
+
+.mp_path{
+    font-size: 12px !important;
+    display: inline-block;
+    float: right;
+    padding-right: 5px;
+}
+
+.mp_path a{
+    font-size: 12px !important;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.path_name{
+	list-style: none;
+	white-space: nowrap;
+	line-height: 18px;
+	font-size: 12px!important;
+	margin: 0;
+	padding: 0;
+}
+
+.possplit{
+    background-image: url(../img/path_name.gif);
+    background-repeat: no-repeat;
+    text-indent: 22px;
+    background-position: center;
+    width: 10px;
+    display: inline-block;
+    border: 0px solid red;
+}
+
+table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size: 14px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+
+table.imagetable .th1 {
+    width: 210px;
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.imagetable .th2 {
+    width: 85px;
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.imagetable .th3 {
+    width: 300px;
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.imagetable .th4 {
+    width: 105px;
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.imagetable .th5{
+    width: 300px;
+	background:#b5cfd2;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+table.imagetable td {
+    line-height: 1.5em;
+	background:#dcddc0;
+	border-width: 1px;
+	padding: 20px;
+	border-style: solid;
+	border-color: #999999;
+}
+ 
+/*我的项目内容区（表格）结束*/
+
+
+
+
+/*家乡介绍内容区*/
+/* 家乡介绍————内容区1（甘肃简介） */
+#container_1 {
+    height: 370px;
+    background-color: #f1efe3;
+    padding-top: 10px;
+}
+
+/* 1号内容区container_1的子元素div#cont_1_1 */
+div#container_1 div.inner div#cont_1_1 {
+    width: 625px;
+    height: 350px;
+    background-color: #fff;
+    float: left;/* 布局的关键代码，浮动元素 */
+    padding-top: 10px;/*上下左右各间隔10px*/
+    padding-left: 10px;
+}
+
+/* 1号内容区container_1的子元素div#cont_1_2 */
+div#container_1 div.inner div#cont_1_2 {
+    width: 344px;
+    height: 360px;
+    background-color: #e8e0cd;
+    float: left;/* 布局的关键代码，浮动元素 */
+}
+
+/* 1号内容区container_1的子元素div#cont_1_2 ———— 标题*/
+div#container_1 div.inner div#cont_1_2 h2 {
+    font-size: 20px;/*字体大小*/
+    font-weight: bold;/*标题字体加粗*/
+    text-align: center;/*居中*/
+    line-height: 45px;
+
+}
+
+/* 1号内容区container_1的子元素div#cont_1_2 ———— 段落*/
+div#container_1 div.inner div#cont_1_2 p {
+    font-size: 14px;/*字体大小*/
+    line-height: 2em;/*设置行间距*/
+    text-indent: 2em;/*首行缩进*/
+    padding-left: 5px;/* 左边和父元素之间留了一定的间隙 */
+    padding-right: 5px;/* 右边和父元素之间留了一定的间隙 */
+    
+}
+
+/* 家乡介绍————2号内容区（名胜古迹） */
+div#container_2 {
+    height: 615px;
+    background-color: #f1efe3;
+}
+
+div#container_2 div.inner h2{
+    font-size: 20px;/*字体大小*/
+    font-weight: bold;/*标题字体加粗*/
+    text-align: center;/*居中*/
+    line-height: 45px;
+}
+
+/* 2号内容区container_2的子元素div#cont_2_1 */
+div#container_2 div.inner div#cont_2_1 {
+    width: 314px;
+    height: 365px;
+    background-color: #ffffff;
+    float: left;/* 布局的关键代码，浮动元素 */
+    margin-top: 70px;/*上方和父元素之间留了一定的间隙 */
+}
+
+/* 2号内容区container_2的子元素div#cont_2_2 */
+div#container_2 div.inner div#cont_2_2 {
+    width: 314px;
+    height: 365px;
+    background-color: #ffffff;
+    float: left;
+    margin-top: 70px;
+    margin-left: 32px;
+}
+
+/* 2号内容区container_2的子元素div#cont_2_3 */
+div#container_2 div.inner div#cont_2_3 {
+    width: 314px;
+    height: 365px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 70px;
+}
+
+/* 2号内容区container_2图片样式*/
+.ms_img{
+    height: 178px;
+}
+
+/* 2号内容区container_2文字样式*/
+.ms_text{
+    font-size: 14px;/*字体大小*/
+    line-height: 1.5em;/*设置行间距*/
+    text-indent: 2em;/*首行缩进*/
+    padding-left: 5px;/* 左边和父元素之间留了一定的间隙 */
+    padding-right: 5px;/* 右边和父元素之间留了一定的间隙 */
+}
+
+.ms_text_ending {
+    font-size: 14px;/*字体大小*/
+    line-height: 1.5em;/*设置行间距*/
+    text-indent: 2em;/*首行缩进*/
+    padding-right: 5px;/* 右边和父元素之间留了一定的间隙 */
+    padding-top: 7px;
+    text-align: right;/*右对齐*/
+}
+/*2号内容区结束*/
+
+
+/* 家乡介绍————3号内容区（特色美食） */
+div#container_3 {
+    height: 1000px;
+    background-color: #f1efe3;
+}
+
+div#container_3 div.inner h2{
+    font-size: 20px;/*字体大小*/
+    font-weight: bold;/*标题字体加粗*/
+    text-align: center;/*居中*/
+    line-height: 45px;
+}
+
+/* 3号内容区container_3的三个子元素 */
+#cont_3_1, #cont_3_2, #cont_3_3, #cont_3_4{
+    width: 1000px;
+    height: 155px;
+    background-color: #ffffff;
+    margin-top: 40px;/*上方和父元素之间留了一定的间隙 */
+}
+
+.ts_img {
+    float: left;
+    width: 233px;
+}
+
+.ts_text {
+    width: 767px;
+    height: 125px;
+    float: right;
+}
+
+.ts_text p{
+    font-size: 14px;/*字体大小*/
+    line-height: 1.5em;/*设置行间距*/
+    text-indent: 2em;/*首行缩进*/
+    padding-left: 5px;/* 左边和父元素之间留了一定的间隙 */
+    padding-right: 5px;/* 右边和父元素之间留了一定的间隙 */
+    padding-top: 5px;
+}
+
+.ts_text_ending {
+    width: 767px;
+    height: 15px;
+    float: right;
+}
+
+.ts_text_ending p{
+    font-size: 14px;/*字体大小*/
+    line-height: 1.5em;/*设置行间距*/
+    text-indent: 2em;/*首行缩进*/
+    padding-right: 5px;/* 右边和父元素之间留了一定的间隙 */
+    text-align: right;/*右对齐*/
+}
+/*3号内容区结束*/
+/*家乡介绍内容区结束*/
+
+
+
+/*页脚的CSS */
+
+#footer {
+    background-color: rgb(241, 145, 113);
+    font-size: 14px;
+    color: #FFFFFF;
+    min-width: 980px;
+}
+
+#footer h3 {
+    border-bottom: solid #F8F8FF 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+#footer .footertext {
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+#footer .footertext p {
+    width: 600px;
+    font-size: 14px;
+    line-height: 180%;
+    text-indent: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+/*页脚结束 */

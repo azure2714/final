@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<title>杜思玥的个人网页</title>  
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  
+  <!--我的项目（myproject.html）——以表单方式呈现-->
+  <body>
+
+	  <!--页眉区-->
+    <div id="header">
+      <div class="inner">
+      </div>
+	  </div>
+    <!--end of header-->
+    
+    <!--导航区-->
+    <div id="nav">
+      <div class="inner">
+        <li class="nav-item i1">
+          <a href="index.html" title="首页">
+            <span class="item-name">首页</span>
+          </a>
+        </li>
+        <li class="nav-item i2">
+          <a href="resume.html" title="个人简历">
+            <span class="item-name">个人简历</span>
+          </a>
+        </li>
+        <li class="nav-item i3">
+          <a href="myproject.html" title="我的项目">
+            <span class="item-name">我的项目</span>
+          </a>
+        </li>
+        <li class="nav-item i4">
+          <a href="myhometown.html" title="家乡介绍">
+            <span class="item-name">家乡介绍</span>
+          </a>
+        </li>
+      </div>
+    </div>
+    <!--end of nav-->
+
+
+    <!--内容区-->
+    <div id="myproject">
+        <div class="inner">
+          <div id="mp_head">
+              <li class="mp_title">
+                  <h2>我的项目</h2>
+              </li>
+              <li class="mp_path">
+                  <span class="path_name">当前位置：</span>
+                      <a href="index.html" target="_self" style="font-size: 17px;">首页</a>
+                  <span class="possplit">&nbsp;&nbsp;</span>
+                      <a href="myproject.html" target="_self">我的项目</a>
+              </li>
+          </div>
+          <table class="imagetable">
+            <tr>
+              <th class="th1">项目名称</th>
+              <th class="th2">项目开发形式</th>
+              <th class="th3">项目简介</th>
+              <th class="th4">项目角色</th>
+              <th class="th5">项目职责</th>
+            </tr>
+            <tr>
+              <td>OHPot(火锅店下单系统)</td>
+              <td>WPF</td>
+              <td>本项目基于大型火锅店的服务需求，开发了一款火锅店下单系统，项目角色分为超级管理员、店长和服务员三类。超级管理员的主要功能是分配权限、对各个门店的店长及服务员进行管理、查看月营业额的图表；店长的主要功能是清点库存数量、管理桌子状态、查看月营业额的图表；服务员的功能是管理菜单菜品、管理桌子状态等。</td>
+              <td>项目成员</td>
+              <td>在本项目中，我主要负责后端开发，包括model类的建立、服务员这一角色相关业务功能的开发、使用Livecharts图表实现每月营业额的可视化、系统测试和容错设计。</td>
+            </tr>
+            <tr>
+              <td>Marks(旅游社交类小程序)</td>
+              <td>云开发</td>
+              <td>本项目制作了一款记录旅行轨迹、图文并茂分享旅行见闻、生成专属地图的旅行社交小程序——Marks，用户可以自由地上传拍摄的照片，并和朋友一起分享拍摄经历，对图片本身以及拍摄地的风光、美食、民俗、服务等相关内容进行讨论交流。通过社交和分享，使得旅行记录具有明显的去商业化特点，易为用户所接受。同时，旅游信息的传播更具对称性和交互性。平等的信息传播地位，更容易让受众接受，也更具备针对性。希望通过特色鲜明，功能专一的应用为用户带来良好的使用体验。</td>
+              <td>项目主持人</td>
+              <td>在本项目中，我担任本小组的组长，总体上负责为组员分配工作。在项目分析与设计阶段，我负责功能架构设计，即功能结构图的描绘；总体用例图的绘制；部分功能的用例分析；开发环境与工具的描述；初步的系统界面设计这几部分内容。在项目实现编码阶段中，我负责用户授权登录、动态发布和动态详情页面的编码。而动态发布包括图片、文字以及位置内容的发布；动态详情页面包括所有动态和关注用户的动态两个条目中动态的显示，以及对动态的点赞、评论、删除等操作。</td>
+            </tr>
+            <tr>
+              <td>医院管理系统</td>
+              <td>J2EE</td>
+              <td>本项目采用Java语言开发医院管理系统，系统角色分为两类：医生和病人。医生的主要功能有查看病人的挂号数据（包括时间、科室等）、查看自己所属科室信息、当有自己科室的病人挂号时会收到邮件提醒。病人的主要功能有挂号、支付挂号费用（支付宝）、查看自己的挂号记录。</td>
+              <td>个人开发</td>
+              <td>由于本项目是个人开发，所以我的项目职责是这个系统包含的所有功能。</td>
+            </tr>
+            <tr>
+              <td>图书馆管理系统</td>
+              <td>J2EE</td>
+              <td>本项目开发的图书馆管理信息系统适合于应用在各种大学、学院、专科、中专等院校。系统主要包含两种角色，其一是图书馆管理员，其二是读者。图书馆管理员有查看全部图书信息、增加图书、查看全部读者信息、增加读者、管理读者借还信息、查看借还日志等功能。读者有图书模糊查询、图书详情查看、个人信息查看与修改、读者借阅信息查看、密码修改等功能。实现了从读者借阅到管理员图书维护的全过程的管理。</td>
+              <td>项目主持人</td>
+              <td>在本项目中，我主要负责系统中读者这一角色的功能开发和小组文档的撰写。读者功能包括登录、查看图书信息、查看图书详情、查看个人信息、修改个人信息、查看个人借阅记录、修改密码等</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+
+
+    
+    <!--页脚区-->
+    <div id="footer">
+        <h3>版权信息</h3>
+        <div class="footertext">
+          <p>本网站为本人原创作品，作者：杜思玥；邮箱：1737139624@qq.com。</p>
+        </div>
+    </div>
+    <!--end of footer-->
+
+  </body>
+</html>
