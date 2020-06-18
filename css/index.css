@@ -16,14 +16,14 @@
 #header {
     height: 650px;
     background-image: url(../img/04.png);
-    background-repeat: repeat-x;
-    position: relative;
-    overflow: hidden;
+    background-repeat: repeat-x;/*背景图像将在水平方向重复*/
+    position: relative;/*规定元素定位类型——相对定位*/
+    overflow: hidden;/*规定当内容溢出元素框时，内容会被修剪*/
     min-width: 980px;
 }
 
 #header .inner{
-    position: relative;
+    position: relative;/*规定元素定位类型——相对定位*/
     height: 130px;
     width: 980px;
     margin: auto;
@@ -49,10 +49,10 @@
 }
 
 .nav-item {
-    display: inline-block;
-    position: relative;
+    display: inline-block;/*行内块元素*/
+    position: relative;/*规定元素定位类型——相对定位*/
     left: 250px;
-    vertical-align: bottom;
+    vertical-align: bottom;/*设置元素的垂直对齐元素，把元素的顶端与行中最低的元素的顶端对齐*/
 }
 
 .nav-item a {
@@ -60,10 +60,10 @@
     font-weight: normal;
     color: #fff;
     font-family: "Microsoft Yahei";
-    display: block;
-    text-align: center;
-    position: relative;
-    z-index: 100;
+    display: block;/*块级元素，前后带有换行符*/
+    text-align: center;/*居中*/
+    position: relative;/*规定元素定位类型——相对定位*/
+    z-index: 100;/*设置元素的堆叠顺序*/
 }
 
 .nav-item a span.item-name {
@@ -73,9 +73,9 @@
     padding-bottom: 0px;
     padding-left: 25px;
     height: 41px;
-    line-height: 41px;
-    display: inline-block;
-    cursor: pointer;
+    line-height: 41px;/*行高*/
+    display: inline-block;/*行内块元素*/
+    cursor: pointer;/*设置光标为指示链接的指针*/
 }
 
 /*导航区结束*/
@@ -86,8 +86,8 @@
 #index_con1 {
     height: 700px;
     background-color: #000000;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 25px;/*上方和父元素之间留了一定的间隙 */
+    padding-bottom: 25px;/*下方和父元素之间留了一定的间隙 */
 }
 
 #index_con1 .inner {
@@ -98,18 +98,18 @@
 }
 
 .left {/*左边箭头*/
-    margin-top: 60px; 
-    margin-left: 300px;
+    margin-top: 60px; /*上方和父元素之间留了一定的间隙 */
+    margin-left: 300px;/*左边和父元素之间留了一定的间隙 */
 }
 
 .myimg{/*我的头像*/
     width: 120px; 
     height: 120px; 
-    border-radius: 120px; 
+    border-radius: 120px; /*给div元素添加圆角的边框*/
 }
 
 .right {/*右边箭头*/
-    margin-left: 660px;
+    margin-left: 660px;/*左边和父元素之间留了一定的间隙 */
 }
 
 .introduction {/*自我介绍文字部分*/
@@ -119,16 +119,16 @@
 
 .introduction h2 {/*自我介绍文字部分*/
     font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 40px;
-    text-align: center;
+    font-size: 20px;/*字体大小*/
+    text-align: center;/*居中*/
+    margin-bottom: 40px;/*下方和父元素之间留了一定的间隙 */
 }
 
 .introduction p {/*自我介绍文字部分*/
     width: 600px;
     font-size: 14px;
     line-height: 180%;
-    text-indent: 2em;
+    text-indent: 2em;/*段落首行文字缩进2个文字的距离*/
     margin: auto;
 }
 /* 首页——内容区（自我介绍）结束 */
@@ -137,82 +137,67 @@
 /*个人简历——内容区的CSS*/
 
 #resume_con1 {
-    height: 2400px;
+    /*height: 2400px;*//*之前这里把内容区的高度写死了，导致页面缩小时，下方内容会溢出*/
     background-color: #000000;
     padding-top: 140px;
     padding-bottom: 50px;
 }
 
 #resume_con1 .inner {
-    height: 2400px;
-    position: relative;
+    /*height: 2400px;*/
+    position: relative;/*规定元素定位类型——相对定位*/
     background-image: url(../img/bar.png);
+    overflow: hidden;/*规定当内容溢出元素框时，内容会被修剪*/
 }
 
-.img {/*我的头像*/
-    width: 746px;
-    height: 120px;
-}
-
-.img .resume_myimg {/*我的头像*/
-    position: absolute;
-    width: 150px; 
-    height: 150px; 
-    border-radius: 150px; 
-    left: 0;
-    right: 0;
-    top: -60px;
-    margin: auto;
-}
-
-.img2 {/*后面条目对应的图片样式*/
+.img {/*简历页面中的图片样式*/
     width: 746px;
     height: 180px;
 }
 
-.img2 .myinfo_img {/*后面条目对应的图片样式*/
-    position: absolute;
+.img .resume_myimg {/*简历页面中的图片样式*/
+    position: absolute;/*绝对定位（在尝试相对定位时，头像的位置不对）*/
     width: 150px; 
     height: 150px; 
-    border-radius: 150px; 
+    border-radius: 150px; /*给div元素添加圆角的边框*/
     left: 0;
     right: 0;
     margin: auto;
 }
 
-.myinfo {/*后面条目对应的文字样式*/
+.myinfo {/*简历页面中的除头像外的内容*/
     width: 746px;
     margin: 0 auto 30px auto;
-    position: relative;
-    overflow: hidden;
+    position: relative;/*绝对定位*/
+    overflow: hidden;/*规定当内容溢出元素框时，内容会被修剪*/
 }
 
 
-.leftbox {
+.leftbox {/*左边内容——标题*/
     float: left;
     width: 320px;
     padding-right: 50px;
 }
 
-.leftbox h2 {/*左边为每一个条目对应的标题*/
+.leftbox h2 {/*左边标题样式*/
     font-size: 20px;
     font-weight: normal;
-    text-align: right;
+    text-align: right;/*右对齐*/
 }
 
-.rightbox {
-    float: right;
+.rightbox {/*右边内容——具体信息*/
+    float: right;/* 布局的关键代码，浮动元素 */
     width: 320px;
     padding-left: 50px;
 }
 
-.rightbox p {/*右边为每一个条目对应的段落*/
-    font-size: 14px;
-    line-height: 2em;
-    /*text-indent: 2em;*/
+.rightbox p {/*右边段落样式*/
+    font-size: 14px;/*字体大小*/
+    line-height: 2em;/*行高*/
 }
 
 /*个人简历——内容区结束*/
+
 
 /*我的项目内容区（表格）*/
 #myproject {
@@ -226,31 +211,31 @@
     width: 1000px;
     height: 40px;
     float: right;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;/*设置一个下边框*/
 }
 
-.mp_title{
-    display: inline-block;
-    float: left;
+.mp_title{/*对应右侧路径整体的样式*/
+    display: inline-block;/*行内块元素*/
+    float: left;/* 布局的关键代码，浮动元素 */
     padding-left: 5px;
 }
 
-.mp_title h2{
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
+.mp_title h2{/*对应右侧路径字体样式*/
+    display: inline-block;/*行内块元素*/
+    font-size: 18px;/*字体大小*/
+    font-weight: bold;/*字体加粗*/
     color: #106f66;
 }
 
-.mp_path{
-    font-size: 12px !important;
+.mp_path{/*对应右侧路径链接的样式*/
+    font-size: 12px !important;/*增加样式权重*/
     display: inline-block;
-    float: right;
+    float: right;/* 布局的关键代码，浮动元素 */
     padding-right: 5px;
 }
 
 .mp_path a{
-    font-size: 12px !important;
+    font-size: 12px !important;/*增加样式权重*/
 }
 
 a{
@@ -260,42 +245,40 @@ a{
 
 .path_name{
 	list-style: none;
-	white-space: nowrap;
+	white-space: nowrap;/*设置如何处理元素内的空白，空白被浏览器忽略*/
 	line-height: 18px;
-	font-size: 12px!important;
+	font-size: 12px !important;/*增加样式权重*/
 	margin: 0;
 	padding: 0;
 }
 
 .possplit{
     background-image: url(../img/path_name.gif);
-    background-repeat: no-repeat;
-    text-indent: 22px;
-    background-position: center;
+    background-repeat: no-repeat;/*背景图像仅显示一次（这里是文字之间的竖线）*/
+    background-position: center;/*竖线居中*/
     width: 10px;
     display: inline-block;
-    border: 0px solid red;
 }
 
-table.imagetable {
+table.imagetable {/*表格部分的整体样式*/
 	font-family: verdana,arial,sans-serif;
 	font-size: 14px;
 	color: #333333;
-	border-width: 1px;
-	border-color: #999999;
-	border-collapse: collapse;
+	border-width: 1px;/*表格边框的宽度*/
+	border-color: #999999;/*表格边框的颜色*/
+	border-collapse: collapse;/*如果可能，边框会合并为一个单一的边框*/
 }
 
-table.imagetable .th1 {
+table.imagetable .th1 {/*表头的样式*/
     width: 210px;
 	background:#b5cfd2;
-	border-width: 1px;
+	border-width: 1px;/*表格边框的宽度*/
 	padding: 8px;
-	border-style: solid;
-	border-color: #999999;
+	border-style: solid;/*边框的样式*/
+	border-color: #999999;/*边框的颜色*/
 }
 
-table.imagetable .th2 {
+table.imagetable .th2 {/*表头的样式*/
     width: 85px;
 	background:#b5cfd2;
 	border-width: 1px;
@@ -304,7 +287,7 @@ table.imagetable .th2 {
 	border-color: #999999;
 }
 
-table.imagetable .th3 {
+table.imagetable .th3 {/*表头的样式*/
     width: 300px;
 	background:#b5cfd2;
 	border-width: 1px;
@@ -313,7 +296,7 @@ table.imagetable .th3 {
 	border-color: #999999;
 }
 
-table.imagetable .th4 {
+table.imagetable .th4 {/*表头的样式*/
     width: 105px;
 	background:#b5cfd2;
 	border-width: 1px;
@@ -322,7 +305,7 @@ table.imagetable .th4 {
 	border-color: #999999;
 }
 
-table.imagetable .th5{
+table.imagetable .th5{/*表头的样式*/
     width: 300px;
 	background:#b5cfd2;
 	border-width: 1px;
@@ -331,13 +314,13 @@ table.imagetable .th5{
 	border-color: #999999;
 }
 
-table.imagetable td {
+table.imagetable td {/*表格内容的样式*/
     line-height: 1.5em;
 	background:#dcddc0;
-	border-width: 1px;
+	border-width: 1px;/*边框的宽度*/
 	padding: 20px;
-	border-style: solid;
-	border-color: #999999;
+	border-style: solid;/*边框的样式*/
+	border-color: #999999;/*边框的颜色*/
 }
  
 /*我的项目内容区（表格）结束*/
@@ -530,7 +513,7 @@ div#container_3 div.inner h2{
     padding-bottom: 10px;
     font-weight: normal;
     font-size: 18px;
-    text-align: center;
+    text-align: center;/*居中*/
 }
 #footer .footertext {
     padding-top: 15px;
@@ -541,7 +524,6 @@ div#container_3 div.inner h2{
     width: 600px;
     font-size: 14px;
     line-height: 180%;
-    text-indent: 2em;
     margin: auto;
     text-align: center;
 }
